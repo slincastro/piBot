@@ -17,19 +17,21 @@ while 1:
     if(option == "f"):
         GPIO.output(17, False)
         GPIO.output(27,True)
+        GPIO.output(22, False)
+        GPIO.output(18,True)
         print ("Voy adelante")
     elif(option == "b"):
         GPIO.output(17, True)
         GPIO.output(27,False)
+        GPIO.output(22, True)
+        GPIO.output(18,False)
         print("Voy de vuelta")
     else :
         GPIO.output(17, False)
         GPIO.output(27,False)
+        GPIO.output(22, False)
+        GPIO.output(18,False)
+
         print("bye ... \n")
         sys.exit()
         break
-
-
-
-
-
