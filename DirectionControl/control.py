@@ -1,4 +1,7 @@
+from StubGPIO import StubGPIO
+
 class Control():
-    def setUpValues(self,port):
-        port.setmode(port.BCM)
-        return none
+    def setUpValues(self):
+        return 3
+        #GPIO = StubGPIO()
+        #GPIO.setmode(GPIO.BCM)
