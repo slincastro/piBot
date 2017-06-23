@@ -11,7 +11,7 @@ class TestControl(unittest.TestCase):
 
         subject = Control()
         subject.setUpValues()
-        mock.setmode.assert_called()
+        mock.setmode.assert_called_with()
 
 
 if __name__ == '__main__':

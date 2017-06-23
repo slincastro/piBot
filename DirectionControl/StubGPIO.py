@@ -1,8 +1,8 @@
 
 class StubGPIO():
-    def setmode(self,mode):
-        return "none"
+    def setmode(self):
+        return "mode"
 
     @property
     def BCM(self):
-        return "none"
+        return "hi"
