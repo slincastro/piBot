@@ -1,7 +1,7 @@
 
 class StubGPIO():
     @staticmethod
-    def setmode(mode):
+    def setmode():
         return "mode"
 
     @property

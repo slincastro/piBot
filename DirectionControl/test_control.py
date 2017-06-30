@@ -6,12 +6,11 @@ from StubGPIO import StubGPIO
 class TestControl(unittest.TestCase):
 
      def test_should_configure_bcm_mode(self):
-        mock = StubGPIO()
+        mock = Control()
         mock.setmode = MagicMock()
 
-        subject = Control()
-        subject.setUpValues(mock)
-        mock.setmode.assert_called_with(123)
+        mock.setUpValues(mock)
+        mock.setmode.assert_called_with()
 
 
 if __name__ == '__main__':
