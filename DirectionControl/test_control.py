@@ -10,8 +10,8 @@ class TestControl(unittest.TestCase):
         mock.setmode = MagicMock()
 
         subject = Control()
-        subject.setUpValues()
-        mock.setmode.assert_called_with()
+        subject.setUpValues(mock)
+        mock.setmode.assert_called_with(123)
 
 
 if __name__ == '__main__':

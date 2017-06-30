@@ -1,6 +1,5 @@
 from StubGPIO import StubGPIO
 
 class Control():
-    def setUpValues(self):
-        GPIO = StubGPIO()
-        GPIO.setmode()
+    def setUpValues(self,instance):
+        instance.setmode(123)
